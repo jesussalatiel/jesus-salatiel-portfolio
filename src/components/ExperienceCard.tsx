@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { Experience } from "@/data/profile";
 import { TechChip } from "@/components/TechChip";
+import { withBasePath } from "@/lib/asset-path";
 
 type Props = {
   item: Experience;
@@ -49,7 +50,7 @@ export function ExperienceCard({ item }: Props) {
           {item.image ? (
             <div className="relative mt-3 hidden aspect-[16/10] overflow-hidden rounded-xl border border-kivo-border bg-kivo-soft shadow-sm sm:block">
               <Image
-                src={item.image.src}
+                src={withBasePath(item.image.src)}
                 alt={item.image.alt}
                 fill
                 sizes="200px"
@@ -75,9 +76,15 @@ export function ExperienceCard({ item }: Props) {
               {item.links.map((link) => (
                 <li key={link.href}>
                   <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noreferrer noopener"
+                    href={withBasePath(link.href)}
+                    target={
+                      link.href.startsWith("http") ? "_blank" : undefined
+                    }
+                    rel={
+                      link.href.startsWith("http")
+                        ? "noreferrer noopener"
+                        : undefined
+                    }
                     className="font-medium text-kivo-ink hover:text-kivo-success focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kivo-ink"
                   >
                     {link.label} ↗
@@ -89,7 +96,7 @@ export function ExperienceCard({ item }: Props) {
           {item.image ? (
             <div className="relative mt-4 aspect-[16/10] overflow-hidden rounded-xl border border-kivo-border bg-kivo-soft shadow-sm sm:hidden">
               <Image
-                src={item.image.src}
+                src={withBasePath(item.image.src)}
                 alt={item.image.alt}
                 fill
                 sizes="100vw"

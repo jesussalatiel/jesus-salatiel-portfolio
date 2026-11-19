@@ -6,6 +6,7 @@ import { SocialIcon } from "@/components/SocialIcon";
 import { Spotlight } from "@/components/Spotlight";
 import { TechChip } from "@/components/TechChip";
 import { profile, type Experience, type ExperienceGroup } from "@/data/profile";
+import { withBasePath } from "@/lib/asset-path";
 
 function isGroup(
   entry: (typeof profile.experience)[number],
@@ -46,7 +47,7 @@ export default function HomePage() {
                   Email me
                 </a>
                 <a
-                  href={profile.resumeHref}
+                  href={withBasePath(profile.resumeHref)}
                   className="inline-flex h-11 items-center rounded-xl border border-kivo-border bg-kivo-surface px-4 text-sm font-semibold text-kivo-ink transition hover:border-kivo-ink/30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-kivo-ink"
                 >
                   Résumé
@@ -109,7 +110,7 @@ export default function HomePage() {
               </ol>
               <div className="mt-12 flex flex-wrap gap-x-6 gap-y-3">
                 <a
-                  href={profile.resumeHref}
+                  href={withBasePath(profile.resumeHref)}
                   className="inline-flex items-center font-semibold leading-tight text-kivo-ink group focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-kivo-ink"
                 >
                   View Full Résumé
@@ -195,7 +196,7 @@ export default function HomePage() {
                       <div className="z-10 sm:col-span-6">
                         {item.href ? (
                           <a
-                            href={item.href}
+                            href={withBasePath(item.href)}
                             className="inline-flex items-baseline font-medium leading-tight text-kivo-ink group/link text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-kivo-ink"
                           >
                             <span>

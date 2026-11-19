@@ -1,20 +1,22 @@
 import Image from "next/image";
 import type { Project } from "@/data/profile";
 import { TechChip } from "@/components/TechChip";
+import { withBasePath } from "@/lib/asset-path";
 
 type Props = {
   item: Project;
 };
 
 export function ProjectCard({ item }: Props) {
-  const title = item.href ? (
+  const href = item.href ? withBasePath(item.href) : undefined;
+  const title = href ? (
     <a
-      href={item.href}
-      target={item.href.startsWith("http") ? "_blank" : undefined}
-      rel={item.href.startsWith("http") ? "noreferrer noopener" : undefined}
+      href={href}
+      target={href.startsWith("http") ? "_blank" : undefined}
+      rel={href.startsWith("http") ? "noreferrer noopener" : undefined}
       className="inline-flex cursor-pointer items-baseline font-medium leading-tight text-kivo-ink group/link text-base focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-kivo-ink"
       aria-label={
-        item.href.startsWith("http")
+        href.startsWith("http")
           ? `${item.title} (opens in a new tab)`
           : item.title
       }
@@ -38,7 +40,7 @@ export function ProjectCard({ item }: Props) {
   const thumbnail = (
     <div className="relative aspect-[16/10] overflow-hidden rounded-xl border border-kivo-border bg-kivo-soft shadow-sm transition duration-300 group-hover:border-kivo-ink/20">
       <Image
-        src={item.image.src}
+        src={withBasePath(item.image.src)}
         alt={item.image.alt}
         fill
         sizes="(max-width: 640px) 100vw, 200px"
@@ -76,7 +78,7 @@ export function ProjectCard({ item }: Props) {
               {item.links.map((link) => (
                 <li key={link.href}>
                   <a
-                    href={link.href}
+                    href={withBasePath(link.href)}
                     className="font-medium text-kivo-ink hover:text-kivo-success focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-kivo-ink"
                   >
                     {link.label} ↗
@@ -92,13 +94,11 @@ export function ProjectCard({ item }: Props) {
           </ul>
         </div>
         <div className="z-10 sm:order-1 sm:col-span-2">
-          {item.href ? (
+          {href ? (
             <a
-              href={item.href}
-              target={item.href.startsWith("http") ? "_blank" : undefined}
-              rel={
-                item.href.startsWith("http") ? "noreferrer noopener" : undefined
-              }
+              href={href}
+              target={href.startsWith("http") ? "_blank" : undefined}
+              rel={href.startsWith("http") ? "noreferrer noopener" : undefined}
               className="block cursor-pointer focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-kivo-ink"
               tabIndex={-1}
               aria-hidden
