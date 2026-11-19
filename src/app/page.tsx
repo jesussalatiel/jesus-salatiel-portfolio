@@ -116,9 +116,9 @@ export default function HomePage() {
                   View Full Résumé
                   <span
                     aria-hidden
-                    className="ml-1 inline-block transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                    className="ml-1 inline-block transition-transform group-hover:translate-x-0.5"
                   >
-                    ↗
+                    →
                   </span>
                 </a>
                 <a

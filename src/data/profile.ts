@@ -434,6 +434,6 @@ export const profile = {
       href: "https://aulavirtual.logalisap.com/mod/simplecertificate/view.php?id=1728&action=get",
     },
   ] as Certification[],
-  resumeHref: "/resume.pdf",
+  resumeHref: "/resume/",
   linkedInHref: "https://www.linkedin.com/in/jesussalatiel/",
 } as const;
