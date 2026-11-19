@@ -67,17 +67,17 @@ export type Certification = {
   href?: string;
 };
 
+/** LinkedIn is the content source of truth for career copy. */
 export const profile = {
   name: "Jesús Salatiel",
-  role: "AI-Native SDET",
-  tagline:
-    "I help teams ask better questions of their software — and ship answers they can trust.",
+  role: "SDET & QA Automation · AI Agents, MCP & Test Strategy",
+  tagline: "Quality work is thinking work.",
   location: "México",
   email: "jesussalatiel@hotmail.com",
   about: [
-    "Quality work is thinking work. For 6+ years I’ve helped engineering teams see what their systems actually do under pressure — not what we hope they do. At Globant I lead AI-driven test strategy; earlier, embedded with Zoox, I validated safety-critical software for a Level 4 robotaxi. The through-line is the same: curiosity under complexity, and evidence before confidence.",
-    "I design agentic QA systems that generate, run, and repair tests with LLMs and RAG; build Playwright and Cypress frameworks into CI/CD; and create tooling that removes busywork so people can focus on judgment. The goal isn’t more automation for its own sake. It’s clearer decisions, faster learning loops, and releases teams can stand behind — across autonomous vehicles, fintech, enterprise SaaS, and cloud migrations.",
-    "I’m completing an M.S. in Artificial Intelligence at TES Jocotitlán, studying how partial verification and imperfect references distort automated evaluator error. My bachelor’s thesis built facial recognition for a virtual assistant (OpenCV + VGG16). At Tec de Monterrey Guadalajara (2017–2018), I worked on EEG-controlled prosthetics advised by Dr. Javier Mauricio Antelis Ortíz (SNI Level 3; Neurotechnology & BCI Lab). I’m also founding Kivo — a Business Workspace that treats operations software as a place for better daily decisions.",
+    "Quality work is thinking work. For 6+ years I've helped engineering teams see what their systems actually do under pressure. At Globant I lead quality engineering for InStride's AWS data platform. Before that, I built multi-agent AI systems that cut test design from 1 day to 1 hour, and validated safety-critical software for Zoox's Level 4 robotaxis.",
+    "I use AI agents to design and run test automation strategies: agents that plan coverage, generate tests, run them and fix failures across the full testing life cycle. I build Playwright, Selenium, Cypress and k6 frameworks into CI/CD, and test web, mobile, APIs, data pipelines and AWS serverless systems. The goal isn't more automation for its own sake. It's clearer decisions and releases teams can stand behind.",
+    "I'm completing an M.S. in Artificial Intelligence, researching how partial verification and imperfect references distort automated evaluator error. I'm also building Kivo, a modular SaaS for business operations with 5 paying customers, where AI agents connected through MCP work as digital employees.",
   ],
   social: [
     {
@@ -107,12 +107,29 @@ export const profile = {
   experience: [
     {
       id: "kivo",
-      range: "Present",
+      range: "Oct 2026 — Present",
       title: "Founder",
       company: "Kivo",
       summary:
-        "Building a multi-tenant Business Workspace for SMB operations — POS, catalog, inventory, billing — with AI-native engineering practices on NestJS, Nuxt 4, DynamoDB, Cognito, and Pulumi/AWS.",
-      tech: ["NestJS", "Nuxt", "DynamoDB", "Cognito", "Pulumi", "TypeScript"],
+        "Built a modular SaaS for business operations from zero to 5 paying customers, with hubs designed around each client's needs.",
+      bullets: [
+        "Design, build and test MCP (Model Context Protocol) servers that power digital employees: AI agents that handle real business tasks",
+        "Own the serverless AWS architecture, UI design in Figma and sales",
+        "Orchestrate AI agents across the product cycle: requirements, design, testing, delivery and observability",
+      ],
+      tech: [
+        "MCP",
+        "AI Agents",
+        "AWS Lambda",
+        "API Gateway",
+        "DynamoDB",
+        "CloudFront",
+        "Figma",
+        "NestJS",
+        "Nuxt",
+        "Cognito",
+        "Pulumi",
+      ],
       image: {
         src: "/projects/kivo.jpg",
         alt: "Kivo Business Workspace dashboard mockup with catalog and lime CTA",
@@ -126,26 +143,45 @@ export const profile = {
       range: "May 2021 — Present",
       roles: [
         {
+          id: "globant-instride",
+          range: "Aug 2026 — Present",
+          title: "SDET · InStride",
+          summary:
+            "Lead quality engineering for InStride's AWS data platform, a client backed by Arizona State University, partnering with Product and Engineering.",
+          bullets: [
+            "Own the k6 performance testing framework and UI/API automation with Playwright and Selenium",
+            "Coordinate AI agents across the full software testing life cycle (STLC)",
+            "Validate data pipelines in Databricks and MongoDB, build Datadog dashboards, and apply shift-left, fuzz and adversarial testing",
+          ],
+          tech: [
+            "k6",
+            "Playwright",
+            "Selenium",
+            "Databricks",
+            "Datadog",
+            "MongoDB",
+            "AWS Lambda",
+            "Step Functions",
+            "AI Agents",
+          ],
+        },
+        {
           id: "globant-ai-agents",
-          range: "Jan 2026 — Present",
+          range: "Jan 2026 — Jul 2026",
           title: "SDET · AI Agents",
           summary:
-            "Building agentic QA for a cloud-native SaaS platform migrating GCP→AWS. Leading AI-driven test automation strategy within a 2-engineer team (Lead) — LLM orchestration and RAG at scale.",
+            "Cut test case design time from 1 day to 1 hour by building a multi-agent AI system (LLM + RAG) for a SaaS platform migrating from GCP to AWS.",
           bullets: [
-            "Playwright + Cucumber cross-browser/multi-device framework with GitHub Actions parallel CI.",
-            "Multi-agent QA workflows: complex test-case generation from ~1 day to ~1 hour.",
-            "AI auto-fix agent (LLMs + RAG) that resolves failing tests and opens PRs — or emits diagnostics.",
-            "Agentic exploratory analyzers and a custom CLI for orchestration and failure triage.",
-            "Regression/validation suites with observability hooks across the GCP→AWS migration.",
+            "Agents generated test cases, explored the app for edge cases and auto-fixed failing tests through pull requests",
+            "Built on a Playwright and Cucumber framework with parallel runs in GitHub Actions",
           ],
           tech: [
             "Playwright",
             "Cucumber",
-            "Python",
-            "TypeScript",
             "LLMs",
             "RAG",
-            "AWS",
+            "Python",
+            "TypeScript",
             "GitHub Actions",
           ],
         },
@@ -154,44 +190,40 @@ export const profile = {
           range: "May 2025 — Mar 2026",
           title: "Salesforce QA Automation Engineer",
           summary:
-            "Led UFT automation for Salesforce and SAP with Azure DevOps; mentored 5 QA engineers.",
+            "Reduced regression testing from 1 day to under 5 minutes by automating 30+ critical end-to-end scenarios for Salesforce and SAP.",
           bullets: [
-            "Regression from ~1 day to under 5 minutes across 30+ critical end-to-end scenarios.",
-            "OCR validation for previously manual UI checks across legacy and cloud systems.",
-            "Sprint reliability: teams consistently hit 90–100% of planned story points.",
+            "Designed a UFT framework integrated with Azure DevOps CI/CD",
+            "Mentored 5 QA engineers; sprint delivery stayed at 90–100%",
           ],
           tech: ["UFT", "VBScript", "Salesforce", "SAP", "Azure DevOps", "OCR"],
         },
         {
           id: "zoox",
           range: "Oct 2024 — May 2025",
-          title: "SDET · Zoox (via Globant)",
+          title: "SDET · Zoox",
           summary:
-            "Embedded at Zoox (California) — safety-critical validation across the Level 4 robotaxi stack: vehicle control, sensor fusion, HIL, and simulation.",
+            "Validated safety-critical software for Zoox (Amazon) fully autonomous robotaxis.",
           bullets: [
-            "Zero-defect tolerance across control, fusion, and real-time decision modules.",
-            "HIL testing for vehicle control and simulation suites for robotaxi edge cases.",
-            "Partnered with perception and robotics on adversarial visualization and Android infotainment validation.",
+            "Owned Hardware-in-the-Loop (HIL) testing for vehicle control systems",
+            "Built simulation test suites for complex driving scenarios with perception, robotics and embedded teams",
           ],
           tech: [
             "HIL",
             "Simulation",
+            "Embedded Systems",
             "Android",
-            "Embedded",
             "Sensor Fusion",
-            "QA for AV",
           ],
         },
         {
           id: "globant-fintech",
           range: "Feb 2022 — Nov 2024",
-          title: "SDET · Fintech",
+          title: "SDET · BNPL Fintech",
           summary:
-            "Led QA strategy in a high-growth fintech (Lima), scaling QA from 1 to 4 engineers in one-week agile cycles.",
+            "Reached 80%+ regression coverage and cut manual testing by 70% as QA owner for a fast-growing Buy Now, Pay Later startup.",
           bullets: [
-            "Playwright and Cypress with 80%+ regression coverage and 70% less manual testing.",
-            "Internal CLI on AWS CI/CD that cut pipeline feedback time by 60%.",
-            "Partnered with Product, Engineering, and the CTO on roadmap and release quality.",
+            "Built Playwright and Cypress frameworks that kept checkout and payment flows stable through weekly releases",
+            "Partnered with the CTO on the roadmap and grew the QA team from 1 to 4 engineers",
           ],
           tech: [
             "Playwright",
@@ -199,7 +231,7 @@ export const profile = {
             "TypeScript",
             "AWS",
             "CI/CD",
-            "Fintech",
+            "Payments",
           ],
         },
         {
@@ -207,13 +239,13 @@ export const profile = {
           range: "May 2021 — Feb 2022",
           title: "QA Automation · Web & Mobile",
           summary:
-            "Selenium and Appium frameworks with BDD (Cucumber/SpecFlow), Docker, and Azure DevOps continuous regression.",
+            "Designed web and mobile test automation frameworks with Selenium and Appium for apps in regulated industries, using BDD with Cucumber and SpecFlow in Java and C#, Azure DevOps pipelines and Docker.",
           tech: [
             "Selenium",
             "Appium",
             "Java",
             "C#",
-            "Cucumber",
+            "BDD",
             "Docker",
             "Azure DevOps",
           ],
@@ -227,39 +259,13 @@ export const profile = {
       company: "Softtek",
       companyHref: "https://www.softtek.com/",
       summary:
-        "Evolved QA practices combining manual testing, business analysis, and automation; supported CMMI-aligned continuous improvement (Aguascalientes).",
-      tech: ["QA Strategy", "Manual Testing", "Automation", "CMMI"],
-    },
-    {
-      id: "eeg-summer-intern",
-      range: "2017 — 2018",
-      title: "Intern · EEG Prosthetic Control",
-      company: "Tecnológico de Monterrey · Campus Guadalajara",
-      companyHref: "https://tec.mx/es",
-      summary:
-        "Research internship advised by Dr. Javier Mauricio Antelis Ortíz (SNI Level 3; Neurotechnology and Brain-Computer Interface Laboratory, Campus Guadalajara): prosthetic design controlled via neural networks from non-invasive EEG — acquisition, intent decoding, and actuator mapping.",
-      bullets: [
-        "Brain–computer interface path from EEG acquisition to prosthetic motion commands.",
-        "Neural-network models to classify motor-intent patterns for upper-limb control.",
-        "Mapped decoded classes to prosthetic actuators in a design/prototype setting.",
-      ],
-      links: [
-        {
-          label: "Advisor · Dr. Javier Mauricio Antelis Ortíz",
-          href: "https://research.tec.mx/vivo-tec/display/PID_32953",
-        },
-      ],
+        "Improved QA delivery for client projects by combining manual testing, business analysis and test automation, with root cause analysis and CMMI-aligned process improvements.",
       tech: [
-        "EEG",
-        "BCI",
-        "Neural networks",
-        "Signal processing",
-        "Prosthetic control",
+        "Manual Testing",
+        "Test Automation",
+        "Root Cause Analysis",
+        "CMMI",
       ],
-      image: {
-        src: "/projects/eeg-prosthesis.jpg",
-        alt: "EEG-controlled prosthetic concept with neural signal path to a robotic hand",
-      },
     },
   ] as ExperienceEntry[],
   projects: [
@@ -267,9 +273,18 @@ export const profile = {
       id: "kivo",
       title: "Kivo · Business Workspace",
       description:
-        "Multi-tenant platform for SMB operations — POS, catalog, inventory, billing, and AI-native engineering. NestJS modular monolith, Nuxt 4, DynamoDB, Cognito, and Pulumi on AWS.",
-      tech: ["NestJS", "Nuxt", "DynamoDB", "Cognito", "Pulumi", "TypeScript"],
-      metric: "Founder · in progress",
+        "Modular SaaS for business operations — from zero to 5 paying customers. Hubs tailored per client; MCP servers power digital employees on serverless AWS, with NestJS, Nuxt, Cognito and Pulumi.",
+      tech: [
+        "MCP",
+        "AI Agents",
+        "NestJS",
+        "Nuxt",
+        "DynamoDB",
+        "Cognito",
+        "Pulumi",
+        "AWS Lambda",
+      ],
+      metric: "Founder · 5 paying customers",
       status: "in-progress",
       image: {
         src: "/projects/kivo.jpg",
@@ -317,10 +332,10 @@ export const profile = {
     {
       id: "thesis-agent-evaluators",
       title:
-        "Estimating automated AI-agent evaluator error under partial verification and imperfect references",
+        "Estimating the Error of Automated Evaluators for AI Agents under Partial Verification and Imperfect References",
       href: "/thesis.pdf",
       description:
-        "How partial verification, non-random audit selection, and imperfect labels distort automated evaluator error and agent success rates. Diagnostic-accuracy methods + LLM-as-judge correction: factorial simulation, cost-aware audit model, and planned AgentRewardBench validation. Pilot: corrected intervals/weighted variance and ~32% evaluation+audit cost cut under stratified auditing (preliminary).",
+        "M.S. thesis (TES Jocotitlán, in progress). How partial verification, non-random audit selection, and imperfect labels distort automated evaluator error and agent success rates. Diagnostic-accuracy methods + LLM-as-judge correction: factorial simulation, cost-aware audit model, and planned AgentRewardBench validation.",
       tech: [
         "Agent evaluation",
         "Verification bias",
@@ -329,7 +344,7 @@ export const profile = {
         "Simulation",
         "AgentRewardBench",
       ],
-      metric: "M.S. thesis · v3.0 progress report · Nov 2026",
+      metric: "M.S. thesis · in progress · TES Jocotitlán",
       status: "in-progress",
       image: {
         src: "/projects/thesis.jpg",
@@ -342,7 +357,7 @@ export const profile = {
         "Facial recognition & identification module for a virtual assistant",
       href: "/tesis-licenciatura.pdf",
       description:
-        "Bachelor’s thesis (TES Jocotitlán, Sep 2019; advisor: M.C.C. Juan Carlos Ambriz Polo). Viola–Jones/OpenCV detection, modified VGG16 with transfer learning (2,622-D features), cosine similarity for owners vs guests. Identification scores 0.6150–0.8243 by lighting, traits, and profile angle.",
+        "Bachelor's thesis (2019; advisor: M.C.C. Juan Carlos Ambriz Polo). Viola–Jones/OpenCV detection, modified VGG16 with transfer learning (2,622-D features), cosine similarity for owners vs guests. Identification scores 0.6150–0.8243 by lighting, traits, and profile angle.",
       tech: [
         "OpenCV",
         "VGG16",
@@ -351,7 +366,7 @@ export const profile = {
         "Viola–Jones",
         "Cosine similarity",
       ],
-      metric: "B.S. thesis · Sep 2019 · cosine match 0.615–0.824",
+      metric: "B.S. thesis · 2019 · cosine match 0.615–0.824",
       status: "completed",
       links: [
         { label: "Summary PDF", href: "/tesis-licenciatura.pdf" },
@@ -367,7 +382,7 @@ export const profile = {
     {
       year: "2026",
       title:
-        "Estimating automated AI-agent evaluator error under partial verification and imperfect references",
+        "Estimating the Error of Automated Evaluators for AI Agents under Partial Verification and Imperfect References",
       href: "/thesis.pdf",
       kind: "M.S. thesis · in progress",
     },
@@ -383,29 +398,29 @@ export const profile = {
     {
       id: "ms-ai",
       range: "Sep 2025 — Present",
-      title: "Master’s Degree in Artificial Intelligence",
+      title: "Master's Degree in Artificial Intelligence",
       company: "TES Jocotitlán",
       summary:
-        "Thesis on estimating automated AI-agent evaluator error under partial verification and imperfect references (advisor: M.C.C. Erika López González). Coursework in AI, ML, and applied data science.",
+        "Thesis: Estimating the Error of Automated Evaluators for AI Agents under Partial Verification and Imperfect References.",
       tech: ["Machine Learning", "Data Science", "Agent Evaluation", "Statistics"],
-    },
-    {
-      id: "tesjo-bs",
-      range: "2014 — 2019",
-      title: "Bachelor’s Degree · Computer Systems Engineering",
-      company: "TES Jocotitlán",
-      summary:
-        "Professional thesis: facial recognition and identification module for a virtual assistant using OpenCV, Viola–Jones, and VGG16 (advisor: M.C.C. Juan Carlos Ambriz Polo).",
-      tech: ["Computer Vision", "CNN", "OpenCV", "Python"],
     },
     {
       id: "itesm",
       range: "2018 — 2019",
-      title: "Computer Science studies",
+      title: "Bachelor's Degree, Computer Science",
       company: "Tecnológico de Monterrey",
       summary:
-        "Computer Science coursework focused on software engineering foundations (Campus Guadalajara context).",
+        "Computer Science studies at Tecnológico de Monterrey.",
       tech: ["Computer Science"],
+    },
+    {
+      id: "toluca",
+      range: "2012 — 2014",
+      title: "Logistics, Materials and Supply Chain Management",
+      company: "Instituto Tecnológico de Toluca",
+      summary:
+        "Undergraduate studies in logistics, materials, and supply chain management.",
+      tech: ["Logistics", "Supply Chain"],
     },
   ] as Experience[],
   certifications: [

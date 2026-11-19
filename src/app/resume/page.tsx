@@ -22,38 +22,38 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Résumé · Jesús Salatiel",
   description:
-    "AI-Native SDET. Curious, constructive quality engineering — agentic testing, LLM evaluation, and evidence-based release confidence. Globant · Zoox · Softtek.",
+    "SDET & QA Automation — AI Agents, MCP & Test Strategy. Globant · InStride · Zoox · Kivo.",
 };
 
 function isGroup(entry: ExperienceEntry): entry is ExperienceGroup {
   return "kind" in entry && entry.kind === "group";
 }
 
-const summary =
-  "Quality work is thinking work. AI-native SDET with 6+ years helping teams see what software actually does under pressure — then ship with evidence, not hope. I lead AI-driven test strategy at Globant; previously validated safety-critical systems on Zoox’s Level 4 robotaxi stack. I design agentic QA (LLMs + RAG), Playwright/Cypress frameworks in CI/CD, and tooling that clears busywork so judgment stays human. Curious under complexity. Constructive by default.";
+const summary = `${profile.about[0]} ${profile.about[1]}`;
 
 const coreSkills = [
   "Playwright",
-  "Cypress",
   "Selenium",
-  "Appium",
+  "Cypress",
+  "k6",
+  "MCP",
+  "AI Agents",
+  "LLMs / RAG",
   "Python",
   "TypeScript",
   "Java",
   "C#",
-  "LLMs / RAG",
-  "Agentic QA",
+  "AWS Lambda",
+  "Databricks",
+  "Datadog",
+  "MongoDB",
   "GitHub Actions",
   "Azure DevOps",
-  "AWS",
-  "Docker",
-  "Cucumber / BDD",
   "HIL / Simulation",
 ];
 
 export default function ResumePage() {
-  const work = profile.experience.filter((e) => e.id !== "eeg-summer-intern");
-  const early = profile.experience.find((e) => e.id === "eeg-summer-intern");
+  const work = profile.experience;
 
   return (
     <div
@@ -90,8 +90,7 @@ export default function ResumePage() {
                   {profile.role}
                 </p>
                 <p className="mt-1 max-w-xl text-sm leading-relaxed text-[#5B657A]">
-                  Curious · Thoughtful · Constructive — agentic QA, LLM evaluation,
-                  evidence-based delivery
+                  AI Agents · MCP · Test Strategy · Evidence-based delivery
                 </p>
               </div>
               <div
@@ -190,14 +189,6 @@ export default function ResumePage() {
                     />
                   ),
                 )}
-                {early && !isGroup(early) ? (
-                  <RoleBlock
-                    title={`${early.title} · ${early.company}`}
-                    range={early.range}
-                    summary="EEG-controlled prosthetic research internship advised by Dr. Javier Mauricio Antelis Ortíz (SNI Level 3; NTLab / BCI, Campus Guadalajara)."
-                    bullets={early.bullets}
-                  />
-                ) : null}
               </div>
             </section>
 

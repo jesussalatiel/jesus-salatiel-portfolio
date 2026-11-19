@@ -9,16 +9,16 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Jesús Salatiel · AI-Native SDET",
+  title: "Jesús Salatiel · SDET & QA Automation",
   description:
-    "AI-native SDET. I help teams ask better questions of their software — and ship answers they can trust. Globant · Zoox · Kivo.",
+    "SDET & QA Automation — AI Agents, MCP & Test Strategy. Globant · InStride · Zoox · Kivo.",
   metadataBase: new URL(
     "https://jesussalatiel.github.io/jesus-salatiel-portfolio",
   ),
   openGraph: {
-    title: "Jesús Salatiel · AI-Native SDET",
+    title: "Jesús Salatiel · SDET & QA Automation",
     description:
-      "Curious, constructive quality engineering — agentic testing, LLM evaluation, evidence-based delivery.",
+      "AI Agents, MCP & Test Strategy — quality engineering for data platforms, robotaxis, and SaaS.",
     type: "website",
     locale: "en_US",
     images: [
@@ -26,15 +26,15 @@ export const metadata: Metadata = {
         url: "/og.jpg",
         width: 1376,
         height: 768,
-        alt: "Jesús Salatiel · AI-Native SDET",
+        alt: "Jesús Salatiel · SDET & QA Automation",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jesús Salatiel · AI-Native SDET",
+    title: "Jesús Salatiel · SDET & QA Automation",
     description:
-      "Curious, constructive quality engineering — agentic testing, LLM evaluation, evidence-based delivery.",
+      "AI Agents, MCP & Test Strategy — quality engineering for data platforms, robotaxis, and SaaS.",
     images: ["/og.jpg"],
   },
 };

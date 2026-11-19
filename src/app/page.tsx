@@ -32,7 +32,7 @@ export default function HomePage() {
               <h1 className="text-4xl font-bold tracking-tight text-kivo-ink sm:text-5xl">
                 <a href="/">{profile.name}</a>
               </h1>
-              <h2 className="mt-3 text-lg font-medium tracking-tight text-kivo-ink sm:text-xl">
+              <h2 className="mt-3 max-w-sm text-lg font-medium leading-snug tracking-tight text-kivo-ink sm:text-xl">
                 {profile.role}
               </h2>
               <p className="mt-4 max-w-xs leading-normal text-kivo-muted">
