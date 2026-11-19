@@ -22,7 +22,7 @@ const mono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Résumé · Jesús Salatiel",
   description:
-    "AI-Native SDET — agentic test automation, LLM evaluation, Playwright, AWS, CI/CD. Globant · Zoox · Softtek.",
+    "AI-Native SDET. Curious, constructive quality engineering — agentic testing, LLM evaluation, and evidence-based release confidence. Globant · Zoox · Softtek.",
 };
 
 function isGroup(entry: ExperienceEntry): entry is ExperienceGroup {
@@ -30,7 +30,7 @@ function isGroup(entry: ExperienceEntry): entry is ExperienceGroup {
 }
 
 const summary =
-  "AI-native SDET with 6+ years shipping agentic test automation, LLM evaluation, and QA infrastructure at scale. Led AI-driven QA at Globant; previously embedded on Zoox’s Level 4 robotaxi stack. Specialize in multi-agent QA (LLMs + RAG), Playwright/Cypress frameworks in CI/CD, and tooling that cuts manual QA by 90%+.";
+  "Quality work is thinking work. AI-native SDET with 6+ years helping teams see what software actually does under pressure — then ship with evidence, not hope. I lead AI-driven test strategy at Globant; previously validated safety-critical systems on Zoox’s Level 4 robotaxi stack. I design agentic QA (LLMs + RAG), Playwright/Cypress frameworks in CI/CD, and tooling that clears busywork so judgment stays human. Curious under complexity. Constructive by default.";
 
 const coreSkills = [
   "Playwright",
@@ -90,7 +90,8 @@ export default function ResumePage() {
                   {profile.role}
                 </p>
                 <p className="mt-1 max-w-xl text-sm leading-relaxed text-[#5B657A]">
-                  Agentic Test Automation · LLM Evaluation · CI/CD · AWS
+                  Curious · Thoughtful · Constructive — agentic QA, LLM evaluation,
+                  evidence-based delivery
                 </p>
               </div>
               <div

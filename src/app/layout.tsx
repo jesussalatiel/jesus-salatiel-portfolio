@@ -11,14 +11,14 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Jesús Salatiel · AI-Native SDET",
   description:
-    "AI-native SDET building agentic test automation, LLM evaluation, and QA infrastructure. Experience at Globant and Zoox. Founder of Kivo.",
+    "AI-native SDET. I help teams ask better questions of their software — and ship answers they can trust. Globant · Zoox · Kivo.",
   metadataBase: new URL(
     "https://jesussalatiel.github.io/jesus-salatiel-portfolio",
   ),
   openGraph: {
     title: "Jesús Salatiel · AI-Native SDET",
     description:
-      "Agentic test automation · LLM evaluation · Playwright · AWS · CI/CD",
+      "Curious, constructive quality engineering — agentic testing, LLM evaluation, evidence-based delivery.",
     type: "website",
     locale: "en_US",
     images: [
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jesús Salatiel · AI-Native SDET",
     description:
-      "Agentic test automation · LLM evaluation · Playwright · AWS · CI/CD",
+      "Curious, constructive quality engineering — agentic testing, LLM evaluation, evidence-based delivery.",
     images: ["/og.jpg"],
   },
 };

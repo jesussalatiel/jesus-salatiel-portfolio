@@ -71,13 +71,13 @@ export const profile = {
   name: "Jesús Salatiel",
   role: "AI-Native SDET",
   tagline:
-    "I build agentic test systems that cut release cycles from days to minutes.",
+    "I help teams ask better questions of their software — and ship answers they can trust.",
   location: "México",
   email: "jesussalatiel@hotmail.com",
   about: [
-    "AI-native SDET with 6+ years building agentic test systems that cut release cycles from days to minutes. Former Zoox project via Globant; currently at Globant leading AI-driven test strategy. Specialized in LLM evaluation, autonomous test generation, and AI agent orchestration for QA at scale.",
-    "I build AI agents that generate, execute, and auto-fix tests (LLMs + RAG); Playwright/Cypress/Selenium frameworks in GitHub Actions & Azure DevOps; cloud-native QA pipelines (AWS · GCP); and CLI tooling that cuts manual QA by 90%+. Domains: autonomous vehicles, fintech, enterprise SaaS, and GCP→AWS migrations.",
-    "M.S. Artificial Intelligence at TES Jocotitlán (thesis on evaluator error under partial verification — in progress). B.S. thesis: facial recognition for a virtual assistant (OpenCV + VGG16). Summer internship at Tec de Monterrey Guadalajara on EEG-controlled prosthetics advised by Dr. Javier Mauricio Antelis Ortíz (SNI Level 3; Neurotechnology & BCI Lab). Founder of Kivo, a multi-tenant Business Workspace.",
+    "Quality work is thinking work. For 6+ years I’ve helped engineering teams see what their systems actually do under pressure — not what we hope they do. At Globant I lead AI-driven test strategy; earlier, embedded with Zoox, I validated safety-critical software for a Level 4 robotaxi. The through-line is the same: curiosity under complexity, and evidence before confidence.",
+    "I design agentic QA systems that generate, run, and repair tests with LLMs and RAG; build Playwright and Cypress frameworks into CI/CD; and create tooling that removes busywork so people can focus on judgment. The goal isn’t more automation for its own sake. It’s clearer decisions, faster learning loops, and releases teams can stand behind — across autonomous vehicles, fintech, enterprise SaaS, and cloud migrations.",
+    "I’m completing an M.S. in Artificial Intelligence at TES Jocotitlán, studying how partial verification and imperfect references distort automated evaluator error. My bachelor’s thesis built facial recognition for a virtual assistant (OpenCV + VGG16). At Tec de Monterrey Guadalajara (2017–2018), I worked on EEG-controlled prosthetics advised by Dr. Javier Mauricio Antelis Ortíz (SNI Level 3; Neurotechnology & BCI Lab). I’m also founding Kivo — a Business Workspace that treats operations software as a place for better daily decisions.",
   ],
   social: [
     {
@@ -237,7 +237,7 @@ export const profile = {
       company: "Tecnológico de Monterrey · Campus Guadalajara",
       companyHref: "https://tec.mx/es",
       summary:
-        "Summer internship advised by Dr. Javier Mauricio Antelis Ortíz (SNI Level 3; Neurotechnology and Brain-Computer Interface Laboratory, Campus Guadalajara): prosthetic design controlled via neural networks from non-invasive EEG — acquisition, intent decoding, and actuator mapping.",
+        "Research internship advised by Dr. Javier Mauricio Antelis Ortíz (SNI Level 3; Neurotechnology and Brain-Computer Interface Laboratory, Campus Guadalajara): prosthetic design controlled via neural networks from non-invasive EEG — acquisition, intent decoding, and actuator mapping.",
       bullets: [
         "Brain–computer interface path from EEG acquisition to prosthetic motion commands.",
         "Neural-network models to classify motor-intent patterns for upper-limb control.",
