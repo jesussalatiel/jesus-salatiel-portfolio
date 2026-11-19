@@ -1,26 +1,52 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --kivo-bg: #f6f8fb;
+  --kivo-surface: #ffffff;
+  --kivo-ink: #111735;
+  --kivo-muted: #626b80;
+  --kivo-border: #dfe4ee;
+  --kivo-lime: #d7f75b;
+  --kivo-soft: #edf0f7;
+  --kivo-success: #16715b;
+  --kivo-danger: #aa3445;
+  --kivo-amber: #855b12;
+  --kivo-amber-bg: #fff5dc;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-kivo-bg: var(--kivo-bg);
+  --color-kivo-surface: var(--kivo-surface);
+  --color-kivo-ink: var(--kivo-ink);
+  --color-kivo-muted: var(--kivo-muted);
+  --color-kivo-border: var(--kivo-border);
+  --color-kivo-lime: var(--kivo-lime);
+  --color-kivo-soft: var(--kivo-soft);
+  --color-kivo-success: var(--kivo-success);
+  --color-kivo-danger: var(--kivo-danger);
+  --color-kivo-amber: var(--kivo-amber);
+  --color-kivo-amberBg: var(--kivo-amber-bg);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--kivo-bg);
+  color: var(--kivo-muted);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  line-height: 1.45;
+}
+
+::selection {
+  background: var(--kivo-lime);
+  color: var(--kivo-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

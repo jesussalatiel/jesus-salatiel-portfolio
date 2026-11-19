@@ -1,0 +1,71 @@
+%PDF-1.4
+1 0 obj<< /Type /Catalog /Pages 2 0 R >>endobj
+2 0 obj<< /Type /Pages /Kids [3 0 R] /Count 1 >>endobj
+3 0 obj<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources<< /Font<< /F1 5 0 R >> >> >>endobj
+4 0 obj<< /Length 1091 >>stream
+BT
+/F1 14 Tf
+50 800 Td
+(TESIS DE LICENCIATURA ? Resumen) Tj
+0 -22 Td
+/F1 11 Tf
+() Tj
+T*
+(Titulo: Modulo de reconocimiento e identificacion de rostros) Tj
+T*
+(faciales para un asistente virtual) Tj
+T*
+() Tj
+T*
+(Autor: I.S.C. Jesus Salatiel Bustamante Robles) Tj
+T*
+(Institucion: Tecnologico de Estudios Superiores de Jocotitlan) Tj
+T*
+(Asesor: M. en C. C. Juan Carlos Ambriz Polo) Tj
+T*
+(Fecha: Septiembre 2019) Tj
+T*
+() Tj
+T*
+(Objetivo: Disenar e implementar un modulo de reconocimiento e) Tj
+T*
+(identificacion facial para un asistente virtual basado en vision) Tj
+T*
+(por computadora.) Tj
+T*
+() Tj
+T*
+(Metodo: OpenCV + Viola-Jones \(deteccion\), VGG16 con transferencia) Tj
+T*
+(de aprendizaje \(vector de caracteristicas 2622-D\) y similitud de) Tj
+T*
+(coseno para identificar propietarios vs invitados.) Tj
+T*
+() Tj
+T*
+(Resultados: rango de acierto por similitud de coseno entre 0.6150) Tj
+T*
+(y 0.8243 segun iluminacion, rasgos y perfil facial.) Tj
+T*
+() Tj
+T*
+(Nota: Este PDF es un resumen web. El manuscrito completo esta en) Tj
+T*
+(tesis-licenciatura.docx en el mismo sitio.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000056 00000 n 
+0000000111 00000 n 
+0000000233 00000 n 
+0000001374 00000 n 
+trailer<< /Size 6 /Root 1 0 R >>
+startxref
+1442
+%%EOF
