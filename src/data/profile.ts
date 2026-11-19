@@ -267,6 +267,37 @@ export const profile = {
         "CMMI",
       ],
     },
+    {
+      id: "eeg-intern",
+      range: "2017 — 2018",
+      title: "Intern · EEG Prosthetic Control",
+      company: "Tecnológico de Monterrey · Campus Guadalajara",
+      companyHref: "https://tec.mx/es",
+      summary:
+        "Research internship advised by Dr. Javier Mauricio Antelis Ortíz (SNI Level 3; Neurotechnology and Brain-Computer Interface Laboratory, Campus Guadalajara): prosthetic design controlled via neural networks from non-invasive EEG — acquisition, intent decoding, and actuator mapping.",
+      bullets: [
+        "Brain–computer interface path from EEG acquisition to prosthetic motion commands",
+        "Neural-network models to classify motor-intent patterns for upper-limb control",
+        "Mapped decoded classes to prosthetic actuators in a design/prototype setting",
+      ],
+      links: [
+        {
+          label: "Advisor · Dr. Javier Mauricio Antelis Ortíz",
+          href: "https://research.tec.mx/vivo-tec/display/PID_32953",
+        },
+      ],
+      tech: [
+        "EEG",
+        "BCI",
+        "Neural networks",
+        "Signal processing",
+        "Prosthetic control",
+      ],
+      image: {
+        src: "/projects/eeg-prosthesis.jpg",
+        alt: "EEG-controlled prosthetic concept with neural signal path to a robotic hand",
+      },
+    },
   ] as ExperienceEntry[],
   projects: [
     {
